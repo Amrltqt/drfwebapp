@@ -14,7 +14,7 @@ class Message(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     """ Uuid primary key """
 
-    content = models.CharField(max_length=280, blank=False, null=False)
+    message = models.CharField(max_length=280, blank=False, null=False)
     """ Content of the little message """
 
     created_at = models.DateTimeField(auto_now_add=True)

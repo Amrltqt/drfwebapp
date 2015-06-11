@@ -2,8 +2,8 @@
 
 from rest_framework import generics
 
-from app.api.models import Message
-from app.api.serializers import MessageSerializer
+from drfwebapp.models import Message
+from drfwebapp.api.serializers import MessageSerializer
 
 
 class MessageList(generics.ListCreateAPIView):
