@@ -20,5 +20,5 @@ class Message(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     """ Creation Datetime of the message """
 
-    user = models.ForeignKey(User, related_name='messages')
+    owner = models.ForeignKey(User, related_name='messages')
     """ User associated to the current message """
